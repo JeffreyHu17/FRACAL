@@ -131,6 +131,17 @@ The statistical calculations scripts support COCO,LVISv1,LVISv05,V3Det,OpenImage
         <td>32.8</td>
         <td>29.8</td>
         <td><a href="https://drive.usercontent.google.com/download?id=1wWYsxIZYnqMvUYz2whRMN5KfFMC5ihF5&export=download">weights</a></td>
+    </tr>
+    <tr>
+        <td>FRACAL-MaskRCNN-Swin-B</td>
+        <td>38.5</td>
+        <td>35.5</td>
+        <td>39.5</td>
+        <td>38.7</td>
+        <td>39.4</td>
+        <td><a href="https://drive.usercontent.google.com/download?id=1EX3VlE2tNLhtXuMASLpBI2lRjBoHyOou&export=download&authuser=0">weights</a></td>
+    </tr>
+    
 </table>
 
 ## BibTeX

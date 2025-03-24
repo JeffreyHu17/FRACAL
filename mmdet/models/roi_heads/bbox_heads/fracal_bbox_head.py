@@ -210,6 +210,21 @@ class ConvFCFracalBBoxHead(ConvFCBBoxHead):
         return results
        
 @MODELS.register_module()
+class DisentangledFracalBBoxHead(ConvFCFracalBBoxHead):
+
+    def __init__(self, fc_out_channels: int = 1024, *args, **kwargs) -> None:
+        super().__init__(
+            num_shared_convs=0,
+            num_shared_fcs=0,
+            num_cls_convs=0,
+            num_cls_fcs=2,
+            num_reg_convs=4,
+            num_reg_fcs=0,
+            fc_out_channels=fc_out_channels,
+            *args,
+            **kwargs)
+
+@MODELS.register_module()
 class Shared2FCFracalBBoxHead(ConvFCFracalBBoxHead):
 
     def __init__(self, fc_out_channels=1024, *args, **kwargs):

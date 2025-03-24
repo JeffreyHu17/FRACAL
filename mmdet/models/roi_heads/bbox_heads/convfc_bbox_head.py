@@ -231,7 +231,21 @@ class Shared2FCBBoxHead(ConvFCBBoxHead):
             fc_out_channels=fc_out_channels,
             *args,
             **kwargs)
+        
+@MODELS.register_module()
+class DisentangledBBoxHead(ConvFCBBoxHead):
 
+    def __init__(self, fc_out_channels: int = 1024, *args, **kwargs) -> None:
+        super().__init__(
+            num_shared_convs=0,
+            num_shared_fcs=0,
+            num_cls_convs=0,
+            num_cls_fcs=2,
+            num_reg_convs=4,
+            num_reg_fcs=0,
+            fc_out_channels=fc_out_channels,
+            *args,
+            **kwargs)
 
 @MODELS.register_module()
 class Shared4Conv1FCBBoxHead(ConvFCBBoxHead):
