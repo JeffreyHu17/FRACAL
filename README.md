@@ -2,7 +2,6 @@
 <div align="center">
  
 [![Static Badge](https://img.shields.io/badge/arxiv-2410.11774v2-blue)](https://arxiv.org/abs/2410.11774v2)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/fractal-calibration-for-long-tailed-object/instance-segmentation-on-lvis-v1-0-val)](https://paperswithcode.com/sota/instance-segmentation-on-lvis-v1-0-val?p=fractal-calibration-for-long-tailed-object)
 
 </div>
 <img src="./assets/fracal_teaser.png"
